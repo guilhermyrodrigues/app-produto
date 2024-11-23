@@ -49,7 +49,7 @@ public class ProdutoResource {
      * @return DTO do produto encontrado
      */
 
-    @GetMapping(value = "{/id}", produces = {MediaType.APPLICATION_JSON_VALUE})
+    @GetMapping(value = "/{id}", produces = {MediaType.APPLICATION_JSON_VALUE})
     @Operation(summary = "Busca produto pelo ID", description = "Busca um produto específico baseado no ID informado", method = "GET")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Produto encontrado com sucesso"),
@@ -87,7 +87,7 @@ public class ProdutoResource {
      * @return DTO do produto atualizado
      */
 
-    @PutMapping(value = "{id}", produces = {MediaType.APPLICATION_JSON_VALUE},
+    @PutMapping(value = "/{id}", produces = {MediaType.APPLICATION_JSON_VALUE},
             consumes = {MediaType.APPLICATION_JSON_VALUE})
     @Operation(summary = "Atualiza um produto", description = "Atualiza um produto com base no ID informado", method = "PUT")
     @ApiResponses(value = {
