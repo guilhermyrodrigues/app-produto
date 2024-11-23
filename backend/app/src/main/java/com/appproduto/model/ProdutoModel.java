@@ -12,12 +12,12 @@ public class ProdutoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer ID;
-    @Column
+    @Column(name =  "nome")
     private String nome;
-    @Column(columnDefinition = "text")
+    @Column(name = "descricao")
     private String descricao;
-    @Column
+    @Column(name = "preco")
     private Double preco;
-    @Column
+    @Column(name = "marca")
     private String marca;
 }

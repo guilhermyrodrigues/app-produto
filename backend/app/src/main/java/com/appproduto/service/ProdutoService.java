@@ -18,7 +18,7 @@ import java.util.List;
 
 @Service
 @Slf4j
-public class ProdutoService{
+public class ProdutoService {
 
     private final ProdutoRepository produtoRepository;
     private final ProdutoMapper produtoMapper;
@@ -78,7 +78,7 @@ public class ProdutoService{
     /**
      * Atualiza um pedido com base no ID informado.
      *
-     * @param id ID do pedido a ser atualizado
+     * @param id     ID do pedido a ser atualizado
      * @param entity DTO do pedido com os dados atualizados
      * @return DTO do pedido atualizado
      */
